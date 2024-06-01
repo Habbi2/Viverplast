@@ -1,0 +1,61 @@
+/* Home.css */
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 4em;
+  color: #2E8B57;
+}
+
+p {
+  font-size: 2em;
+  color: #f5f5dc;
+}
+
+.explore-button {
+  background-color: #2E8B57;
+  color: #f5f5dc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+  background-color: #92C09A;
+}
+
+.video-container {
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.video-player {
+  width: auto;
+  height: 100%;
+  z-index: 1;
+}

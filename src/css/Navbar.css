@@ -1,0 +1,84 @@
+/* Navbar.css */
+
+.navbar {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  background-color: #2E8B57;
+  color: #f5f5dc;
+  position: fixed;
+  /* Agrega esta línea para hacer la barra de navegación fija */
+  top: 0;
+  /* Ajusta la posición superior según tus necesidades */
+  width: 96%;
+  /* Opcional: asegúrate de que la barra ocupe todo el ancho */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-button {
+  position: relative;
+  /* Asegura que el botón esté en el mismo contexto de apilamiento */
+  z-index: 2;
+  /* Asegura que el botón esté por encima del video */
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  display: none;
+  /* Hide the menu icon by default */
+}
+
+.menu-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #f5f5dc;
+  margin: 2px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: flex;
+    /* Mostrar el icono del menú en pantallas más pequeñas */
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: inline-flex;
+    position: absolute;
+    top: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2E8B57;
+    width: 100%;
+    padding: 4% 0%;
+    right: 0;
+  }
+}

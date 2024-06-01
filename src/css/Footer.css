@@ -8,6 +8,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0px -4px 6px #2E8B57; /* Sombra encima del footer */
 }
 
 .footer-text {

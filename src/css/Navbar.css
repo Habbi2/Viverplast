@@ -14,11 +14,14 @@
   /* Ajusta la posición superior según tus necesidades */
   width: 96%;
   /* Opcional: asegúrate de que la barra ocupe todo el ancho */
+  box-shadow: 0px 4px 6px #2E8B57; /* Sombra encima del footer */
+  /* Sombra debajo del Navbar */
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+  text-shadow: 1px 1px 0 #2c2c28
 }
 
 .menu-button {
@@ -42,6 +45,7 @@
   width: 30px;
   height: 3px;
   background-color: #f5f5dc;
+  text-shadow: 1px 1px 0 #2c2c28;
   margin: 2px 0;
 }
 
@@ -50,6 +54,21 @@
   display: flex;
   margin: 0;
   padding: 0;
+
+  li {
+    background-color: #2E8B57;
+    color: #f5f5dc;
+    text-shadow: 1px 1px 0 #2c2c28;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background-color: #349e62;
+  }
 }
 
 .nav-links li {

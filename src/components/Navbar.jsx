@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ setBool }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,8 +20,8 @@ const Navbar = () => {
         <span className="menu-icon"></span>
       </button>
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <li>Home</li>
-        <li>About</li>
+        <li onClick={() => setBool(true)}>Home</li>
+        <li onClick={() => setBool(false)}>About</li>
         <li>Products</li>
         <li>Contact</li>
       </ul>

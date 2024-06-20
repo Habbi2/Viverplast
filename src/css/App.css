@@ -3,13 +3,13 @@ CSS
 .video-container {
   width: 100%;
   height: 100vh; /* 100% de la altura de la ventana */
-  position: absolute; /* Añade posición relativa para que z-index funcione */
+  position: fixed; /* Añade posición relativa para que z-index funcione */
 }
 
 .video-player {
   width: 100%; /* Ajusta el ancho al 100% */
   height: 100%; /* Ajusta la altura automáticamente según el ancho */
-  position: absolute; /* Añade posición absoluta para que ocupe todo el contenedor */
+  position: fixed; /* Añade posición absoluta para que ocupe todo el contenedor */
   top: 0;
   left: 0;
   z-index: 1;

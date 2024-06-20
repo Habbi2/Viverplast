@@ -10,7 +10,7 @@ const Navbar = ({ setBool }) => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Viverplast</div>
+      <div className="logo" onClick={() => setBool(0)}>Viverplast</div>
       <button
         className={`menu-button ${menuOpen ? 'active' : ''}`}
         onClick={toggleMenu}
@@ -21,9 +21,9 @@ const Navbar = ({ setBool }) => {
       </button>
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <li onClick={() => setBool(0)}>Home</li>
-        <li onClick={() => setBool(1)}>About</li>
-        <li onClick={() => setBool(2)}>Products</li>
-        <li onClick={() => setBool(3)}>Contact</li>
+        <li onClick={() => setBool(1)}>Nossotros</li>
+        <li onClick={() => setBool(2)}>Productos</li>
+        <li onClick={() => setBool(3)}>Contacto</li>
       </ul>
     </nav>
   );

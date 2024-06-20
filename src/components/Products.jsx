@@ -12,7 +12,7 @@ const Products = () => {
                 {Array.map((n) => {
                     return (
                         <div class="image">
-                            Image
+                            Imagen
                         </div>)
                 })}</div>
         </div>

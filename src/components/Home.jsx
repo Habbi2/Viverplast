@@ -8,7 +8,7 @@ const Home = ({ setBool }) => {
                     <h1>Viverplast</h1>
                     <p>Your Trusted Source for Quality Agricultural Products</p>
                 </header>
-                <button className="explore-button" onClick={() => setBool(false)}>Explore</button>
+                <button className="explore-button" onClick={() => setBool(1)}>Explore</button>
             </div>
         </div>
     );

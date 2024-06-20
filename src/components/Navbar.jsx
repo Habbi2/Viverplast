@@ -20,10 +20,10 @@ const Navbar = ({ setBool }) => {
         <span className="menu-icon"></span>
       </button>
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <li onClick={() => setBool(true)}>Home</li>
-        <li onClick={() => setBool(false)}>About</li>
-        <li>Products</li>
-        <li>Contact</li>
+        <li onClick={() => setBool(0)}>Home</li>
+        <li onClick={() => setBool(1)}>About</li>
+        <li onClick={() => setBool(2)}>Products</li>
+        <li onClick={() => setBool(3)}>Contact</li>
       </ul>
     </nav>
   );

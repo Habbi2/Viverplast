@@ -21,7 +21,7 @@ const Navbar = ({ setBool }) => {
       </button>
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <li onClick={() => setBool(0)}>Home</li>
-        <li onClick={() => setBool(1)}>Nossotros</li>
+        <li onClick={() => setBool(1)}>Nosotros</li>
         <li onClick={() => setBool(2)}>Productos</li>
         <li onClick={() => setBool(3)}>Contacto</li>
       </ul>

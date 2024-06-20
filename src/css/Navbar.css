@@ -65,7 +65,7 @@
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    font-size: 0.8em;
+    font-size: 1.5em;
   }
 
   li:hover {
@@ -88,6 +88,9 @@
 
   .nav-links {
     display: none;
+    li {
+      font-size: 0.8em;
+    }
   }
 
   .nav-links.active {
